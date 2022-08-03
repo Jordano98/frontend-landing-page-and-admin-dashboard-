@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> -->
+
+    <style>
+        .container{
+            margin-top: 50px;
+            padding: 20px 0px;
+            height: 500px;
+            background-color: blueviolet;
+            /*display: inline-flex;*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /*flex-flow: row wrap;*/
+            justify-content: space-evenly;
+            /*align-content:space-between;*/
+            align-items: flex-start;
+        }
+        .item{
+            width: 70px;
+            margin: 10px;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            background-color: #777;
+        }
+        .item1{
+            /*font-size: 70px ;*/
+            order: 1;
+            align-self: center;
+            flex: 0 1 auto;
+        }
+        .item5{
+            order: -1;
+            flex-grow: 1;
+        }
+        .item3{
+            flex-basis: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="bg-secondary text-center p-2 clearfix position-fixed-top">
+        <h1 class="bg-success p-2 float-md-start">hello</h1>
+        <h1 class="bg-danger p-2 float-md-end">world</h1>
+    </div>  -->
+
+    <!-- <div class="container">
+        welcome to bootstrap5 course
+    </div> -->
+
+    <!-- <h3>this is an<small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</small></h3>
+    
+    <p class="fw-bold">salam</p>
+    <p class="fst-italic bg-black text-light mb-sm-0">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="text-white bg-dark mt-0">.text-white</p>
+
+    <p class="text-sm-center">kheyli bahaliiii</p>
+
+    <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+        <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+        <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+        <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+        <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+        <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+    </div>
+    
+    <div class=" position-relative" style=" background-color:aqua; width: 200px; height: 80px; ">
+        <div class="position-absolute bg-black text-center" style="width: 20%; overflow:hidden; ">miyvuycucu</div>
+    </div> -->
+
+    <div class="container">
+        <div class=" item item1">A</div>
+        <div class=" item item2">B</div>
+        <div class=" item item3">C</div>
+        <div class=" item item4">D</div>
+        <div class=" item item5">E</div>
+    </div>
+    
+
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+</body>
+</html>
