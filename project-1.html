@@ -9,8 +9,10 @@
     <script src="https://kit.fontawesome.com/5854e4aa93.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- nav starts -->
     
-    <nav class="navbar navbar-expand-md bg-dark">
+    <nav class="navbar navbar-expand-md bg-dark fixed-top">
         <a class="navbar-brand text-warning" href=""><i class="fas fa-child fa-2x"></i></a>
         <button type="botton" class=" navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav" ><span class=" navbar-toggler-icon"></span></button>
         <div id="nav" class=" collapse navbar-collapse  justify-content-between ">
@@ -32,10 +34,10 @@
                 <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold"  href="">Team</a></li>
                 <li class="nav-item"><a class="nav-link text-light text-uppercase font-weight-bold"  href="">Contact</a></li>
             </ul>
-            <form class=" form-inline">
+            <form class=" form-inline" style="margin-top:17px ;">
                 <div class=" input-group">
                     <input class=" form-control" type="text" name="" id="" placeholder="search:">
-                    <div class=" input-group-append">
+                    <div class=" input-group-append" style="margin-left: 2px;">
                         <button  class=" btn" type="botton"><i class="fas fa-search  text-light"></i></button>
                     </div>
                 </div>
@@ -43,7 +45,20 @@
         </div>
     </nav>
     
-    
+    <!-- nav part ends -->
+    <!-- banner part starts -->
+    <section>
+        <div class="container-fluid">
+            <div class="row bg-info justify-content-center align-items-center" style="height: 100vh;">
+                <div class=" col-sm-10 text-center ">
+                    <h1 class=" text-capitalize display-2"><span class=" text-warning">pure bootstrap</span><span class=" text-white fw-bold">Website</span></h1>
+                    <h2 class=" fw-light text-light fst-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+                    <a href="#" class=" btn btn-outline-warning btn-lg text-dark px-3 my-3 ">press here</a>
+                    <a href="#" class=" btn btn-outline-danger btn-lg text-dark px-3 my-3">press here</a>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
