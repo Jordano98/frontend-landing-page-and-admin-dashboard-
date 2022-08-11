@@ -1,3 +1,14 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+/* side bar */
+.sidebar{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)), url(images/digitization-g16c69ea82_640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 7px 25px #999;
+}
+/* side bar */
