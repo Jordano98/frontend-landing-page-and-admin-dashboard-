@@ -56,14 +56,14 @@
                             </div>
                             <div class="col-md-3">
                                 <ul class="navbar-nav ">
-                                    <li class="navbar-item m-2 ms-5 icon-parent">
+                                    <li class="navbar-item m-2 ms-2 icon-parent">
                                         <a href="#" class="navbar-link icon-bullet"><i class=" fas fa-comments text-muted fa-lg"></i></a>
                                     </li>
                                     <li class="navbar-item m-2 icon-parent">
                                         <a href="#" class="navbar-link icon-bullet"><i class=" fas fa-bell text-muted fa-lg"></i></a>
                                     </li>
                                     <li class="navbar-item m-2 icon-parent">
-                                        <a href="#" class="navbar-link icon-bullet"><i class=" fas fa-sign-out-alt text-muted fa-lg"></i></a>
+                                        <a href="#" class="navbar-link" data-bs-toggle="modal" data-bs-target="#sign-out"><i class=" fas fa-sign-out-alt text-muted fa-lg"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -75,6 +75,25 @@
         </div>
     </nav>
     <!-- navbar end -->
+    <!-- modal  -->
+        <div class="modal fade" id="sign-out">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Are you sure about it?</h4>
+                        <button type="button" class=" btn-close" aria-label="close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>press logout to leave</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">stay here :)</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">log out :(</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    <!-- modal end -->
 
     
     <script src="js/bootstrap.bundle.min.js"></script>
