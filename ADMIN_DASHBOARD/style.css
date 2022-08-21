@@ -86,3 +86,12 @@ body{
 }
 
 /* cards end */
+
+/* task list */
+
+.task-border{
+    border-left: 3px solid black;
+    border-radius: 5px;
+}
+
+/* task list end */
