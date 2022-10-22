@@ -120,5 +120,14 @@ header{
         opacity: 1;
     }
 }
+
+.fromleft{
+    animation-name: fromleft;
+    animation-duration: 3s;
+}
+.fromright{
+    animation-name: fromright;
+    animation-duration: 3s;
+}
 /*end of mission */
 

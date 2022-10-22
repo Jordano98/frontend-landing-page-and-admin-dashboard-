@@ -9,5 +9,15 @@ $(document).ready(function(){
         }else{
             $('.nav-menu').removeClass('custom-navbar');
         }
-    })
+    });
+    $(window).scroll(function(){
+        let position=$(this).scrollTop();
+        if(position>=650){
+            $('.camera-img').addClass('fromleft');
+            $('.mission-text').addClass('fromright');
+        }else{
+            $('.camera-img').removeClass('fromleft');
+            $('.mission-text').removeClass('fromright');
+        }
+    });
 });
