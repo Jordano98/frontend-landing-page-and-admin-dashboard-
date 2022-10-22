@@ -89,3 +89,14 @@ header{
 
 /* header ends */
 
+/* mission */
+.mission{
+    background: #101a1b;
+}
+.underline{
+    width: 200px;
+    border: 1px solid #eee;
+    margin: auto;
+}
+/*end of mission */
+
