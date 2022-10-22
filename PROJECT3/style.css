@@ -98,5 +98,27 @@ header{
     border: 1px solid #eee;
     margin: auto;
 }
+
+@keyframes fromleft{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromright{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 /*end of mission */
 
