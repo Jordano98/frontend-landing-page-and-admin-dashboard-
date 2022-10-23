@@ -164,4 +164,7 @@ header{
     user-select: none;
     color: #777;
 }
+.active-item{
+    color: #70aed2;
+}
 /* end of gallery */
