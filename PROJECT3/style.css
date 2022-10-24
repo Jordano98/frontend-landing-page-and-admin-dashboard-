@@ -197,5 +197,48 @@ header{
     background: #f9793d;
     transform: translateY(-2px);
 }
+@keyframes movefromleft{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes movefrombottom{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes movefromright{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.movefromleft{
+    animation-name: movefromleft;
+    animation-duration: 2s;
+}
 
+.movefrombottom{
+    animation-name: movefrombottom;
+    animation-duration: 2s;
+}
+
+.movefromright{
+    animation-name: movefromright;
+    animation-duration: 2s;
+}
 /*end of price*/

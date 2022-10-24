@@ -32,4 +32,16 @@ $(document).ready(function(){
     $('.gallery-list-item').click(function(){
         $(this).addClass('active-item').siblings().removeClass('active-item');
     });
+    $(window).scroll(function(){
+        let position=$(this).scrollTop();
+        if(position>=4300){
+            $('.card1').addClass('movefromleft');
+            $('.card2').addClass('movefrombottom');
+            $('.card3').addClass('movefromright');
+        }else{
+            $('.card1').removeClass('movefromleft');
+            $('.card2').removeClass('movefrombottom');
+            $('.card3').removeClass('movefromright');
+        }
+    });
 });
