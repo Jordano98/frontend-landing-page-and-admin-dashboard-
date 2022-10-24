@@ -174,3 +174,28 @@ header{
     background: #151f20;
 }
 /*end of customer*/
+
+/*price*/
+.card1,.card2,.card3{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.5)),url(images/pricing-card-bg.jpeg) no-repeat center center /cover;
+    box-shadow: 5px 18px 50px #555;
+}
+.card-list-item{
+    border-bottom: 1px groove #eee;
+    width: 55%;
+    margin: auto;
+}
+.price-card-button{
+    background: #f5593d;
+    border-radius: 15px;
+    width: 130px;
+    color: lightgray;
+    box-shadow: 5px 8px 18px #000;
+    transition: all 0.4s;
+}
+.price-card-button:hover{
+    background: #f9793d;
+    transform: translateY(-2px);
+}
+
+/*end of price*/
