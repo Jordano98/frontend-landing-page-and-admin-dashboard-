@@ -264,6 +264,7 @@ header{
     background: #f5593d;
     color: #eee;
     transition: all 0.3s;
+    width: 100%;
 }
 .submit-button:hover{
     background: #f9793d;
@@ -283,3 +284,15 @@ header{
     }
 }
 /*end of contact*/
+
+/*footer*/
+.footer-link{
+    color: #eee;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+.footer-link:hover{
+    color: #70aed2;
+    text-decoration: none;
+}
+/*end of footer*/
