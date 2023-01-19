@@ -1,0 +1,92 @@
+@import url('utility.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.testemonial{
+    background-color: #ae98d3;
+}
+.container{
+    width: 95%;
+    max-width: 1280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 9px;
+    grid-template-areas: "item1 item1 item2 item3" "item4 item5 item5 item3"
+}
+.items{
+    font-size: 3rem;
+    border-radius: 5px;
+    align-content: flex-start;
+    display: grid;
+    padding: 1.5rem;
+    grid-auto-flow: column;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: 'image name' 'title title' 'description description'
+    
+
+}
+
+.items img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    grid-area: image;
+}
+.items .name{
+    align-self: center;
+    font-size: 1.7rem;
+    grid-area: name;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.items .title{
+    font-size: 1.8rem;
+    grid-area: title;
+    font-weight: bold;
+}
+.items .description{
+    font-size: 1.5rem;
+    grid-area: description;
+}
+.items .description::after{
+    content: '"';
+}
+.items .description::before{
+    content: '"';
+}
+.item1{
+    background-color: #733fc7;
+    background-image: url(../ADMIN_DASHBOARD/images/download.png);
+    background-repeat: no-repeat;
+    background-size: 55px;
+    background-position: top 10% right 20px;
+    grid-area: item1;
+}
+
+.item2{
+    background-color: #573491;
+    grid-area: item2;
+    
+}
+
+.item3{
+    background-color: #3fa7c7;
+    grid-area: item3;
+}
+
+.item4{
+    background-color: #d9cbf0;
+    grid-area: item4;
+}
+
+.item5{
+    background-color: #70305e;
+    grid-area: item5;
+}
