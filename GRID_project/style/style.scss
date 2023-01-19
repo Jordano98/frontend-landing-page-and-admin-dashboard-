@@ -1,4 +1,7 @@
 @import url('utility.css');
+
+$bg-color:  #ae98d3; /*scss variable*/
+
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +11,7 @@ html{
     font-size: 10px;
 }
 .testemonial{
-    background-color: #ae98d3;
+    background-color: $bg-color; /*Using the variables you create for yourself*/
 }
 .container{
     width: 95%;
@@ -28,39 +31,39 @@ html{
     padding: 1.5rem;
     grid-auto-flow: column;
     grid-template-columns: 50px 1fr;
-    grid-template-areas: 'image name' 'title title' 'description description'
+    grid-template-areas: 'image name' 'title title' 'description description';
     
-
+    img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        grid-area: image;
+    }
+    .name{
+        align-self: center;
+        font-size: 1.7rem;
+        grid-area: name;
+        padding-left: 1rem;
+        font-weight: bold;
+    }
+    .title{
+        font-size: 1.8rem;
+        grid-area: title;
+        font-weight: bold;
+    }
+    .description{
+        font-size: 1.5rem;
+        grid-area: description;
+    }
+    .description::after{
+        content: '"';
+    }
+    .description::before{
+        content: '"';
+    }
 }
 
-.items img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    grid-area: image;
-}
-.items .name{
-    align-self: center;
-    font-size: 1.7rem;
-    grid-area: name;
-    padding-left: 1rem;
-    font-weight: bold;
-}
-.items .title{
-    font-size: 1.8rem;
-    grid-area: title;
-    font-weight: bold;
-}
-.items .description{
-    font-size: 1.5rem;
-    grid-area: description;
-}
-.items .description::after{
-    content: '"';
-}
-.items .description::before{
-    content: '"';
-}
+ 
 .item1{
     background-color: #733fc7;
     background-image: url(../ADMIN_DASHBOARD/images/download.png);
