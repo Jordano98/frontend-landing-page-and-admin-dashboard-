@@ -1,6 +1,6 @@
-$lihgt-blue:#caf0f8;
+$lihgt-blue:rgba(202, 240, 248, 0.76);
 $medium-blue:#00bfd8;
-$dark-blue:#03045e;
+$dark-blue:rgba(3, 5, 94, 0.801);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,400&display=swap');
 
@@ -17,4 +17,14 @@ body{
     font-weight: 400;
     line-height: 1.7;
     color: #777;
+    padding: 26px;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to right bottom,$lihgt-blue,$dark-blue), url('../image/feature-img5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top ;
+    clip-path: polygon(0 0,100% 0,100% 75vh,0 100%);
 }
