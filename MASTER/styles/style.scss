@@ -100,6 +100,21 @@ body{
         transform: translate(0);
     }
 }
+
+@keyframes moveinbottom {
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn-animated{
+    animation: moveinbottom 0.4s ease-out 2s backwards ;
+}
 .btn:link,
 .btn:visited{
     text-transform: uppercase;
@@ -108,10 +123,14 @@ body{
     padding: 10px 30px;
     border-radius: 50px;
     transition: all 0.2s;
+    position: relative;
 }
 .btn-white{
     background-color: #fff;
     color: #777;
+}
+.btn-white::after{
+    background-color: #fff;
 }
 .btn:hover{
     transform: translateY(-3px);
@@ -120,4 +139,21 @@ body{
 .btn:active{
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.btn::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
 }
